@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_Over</name>
+    <events>
+        <include>Som</include>
+        <event-group description="" sid="532278864980019" title="Game Over BG">
+            <sub-events>
+                <event-block sid="475168214944149">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="590108877541689" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="893242459371992" type="Cloud1">
+                            <param id="0" name="X">Cloud1.X-2</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="802032312031645" type="Cloud2">
+                            <param id="0" name="X">Cloud2.X -2</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="493770205448603" type="Cloud3">
+                            <param id="0" name="X">Cloud3.X -2</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="209965323816283" type="Cloud4">
+                            <param id="0" name="X">Cloud4.X -2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="243232814183591">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="785751234650758" type="Cloud1">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-854</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="674558885164291" type="Cloud1">
+                            <param id="0" name="X">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="657175273138727">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="381427998591598" type="Cloud2">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="974976379323793" type="Cloud2">
+                            <param id="0" name="X">860</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="461239262782642">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="268347285455887" type="Cloud3">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-30</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="432346989148930" type="Cloud3">
+                            <param id="0" name="X">870</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="422262289839331">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="609365289397094" type="Cloud4">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="816484908565045" type="Cloud4">
+                            <param id="0" name="X">880</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="188316848057454" title="Game Over Menu">
+            <sub-events>
+                <event-block sid="850374601537605">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="868776942018425" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="965842096636260" type="Capitão">
+                            <param id="0" name="Animation">&quot;Death&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="124799789456931" type="Vela">
+                            <param id="0" name="Animation">&quot;Destroyed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="303184884317942" type="Pontuacao_Fase">
+                            <param id="0" name="Text">&quot;Pontuacao: &quot; &amp; Pontuacao</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="734343378455963" type="Audio" />
+                        <action id="0" name="Play" sid="270157098632890" type="Audio">
+                            <param id="0" name="Audio file">Megaman  Bass [SNES] music Game Over [HD]</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="141237764418409">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="602295813123430" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="887685601933969" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="524954473725379">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="170691200354551" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Reiniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="766269832307932" type="System">
+                            <param id="0" name="Layout">&quot;Fase&quot; &amp; Fase</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="576629787508045" type="System">
+                            <param id="0" name="Variable">Pontuacao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

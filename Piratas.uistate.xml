@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">Menu</layout>
+        <layout order="2">Fase1</layout>
+        <event-sheet order="1">MenuPrincipal</event-sheet>
+        <event-sheet order="3">Fase1</event-sheet>
+        <event-sheet order="4">Fase2</event-sheet>
+        <event-sheet order="5">Fase3</event-sheet>
+        <event-sheet order="6">Game_Over</event-sheet>
+        <event-sheet order="7">EvBarco</event-sheet>
+        <event-sheet order="8">EvPersonagem</event-sheet>
+        <event-sheet order="9">Som</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="0" name="Inimigos" />
+        <family expanded="0" name="BarcoCol" />
+        <family expanded="0" name="Inimigos_p2" />
+        <family expanded="1" name="InBarco" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Backgrounds/" />
+        <folder expanded="1" path="object-folder/Backgrounds/Water/" />
+        <folder expanded="0" path="object-folder/Backgrounds/Clouds/" />
+        <folder expanded="0" path="object-folder/Barco/" />
+        <folder expanded="1" path="object-folder/Barco/Bala/" />
+        <folder expanded="0" path="object-folder/Inimigos/" />
+        <folder expanded="1" path="object-folder/Inimigos/Barquinhos/" />
+        <folder expanded="0" path="object-folder/Barra de Vida/" />
+        <folder expanded="0" path="object-folder/Fonts/" />
+        <folder expanded="0" path="object-folder/TileSets_menu/" />
+        <folder expanded="0" path="object-folder/TileSets_menu/Menu/" />
+        <folder expanded="0" path="object-folder/TileSets_menu/Menu/Menu_inicial/" />
+        <folder expanded="0" path="object-folder/TileSets_menu/Menu/Menu_fases/" />
+        <folder expanded="0" path="object-folder/TileSets_menu/Botoes/" />
+        <folder expanded="0" path="object-folder/TileSets_menu/Botoes/Fases/" />
+        <folder expanded="0" path="object-folder/Plataforma/" />
+        <folder expanded="0" path="object-folder/Plataforma/Itens/" />
+        <folder expanded="0" path="object-folder/Plataforma/Itens/Efeitos/" />
+        <folder expanded="0" path="object-folder/Plataforma/Inimigos/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Water/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Cloud2/" />
+        <folder expanded="1" path="animation-folder/Cloud3/" />
+        <folder expanded="1" path="animation-folder/Cloud4/" />
+        <folder expanded="1" path="animation-folder/bg/" />
+        <folder expanded="1" path="animation-folder/Ilha/" />
+        <folder expanded="1" path="animation-folder/Bala/" />
+        <folder expanded="1" path="animation-folder/Bala_acerto/" />
+        <folder expanded="1" path="animation-folder/Bala_acerto2/" />
+        <folder expanded="1" path="animation-folder/Barco/" />
+        <folder expanded="1" path="animation-folder/Vela/" />
+        <folder expanded="1" path="animation-folder/Manche/" />
+        <folder expanded="1" path="animation-folder/Capitão/" />
+        <folder expanded="1" path="animation-folder/Canhao/" />
+        <folder expanded="1" path="animation-folder/PéCanhao/" />
+        <folder expanded="1" path="animation-folder/Bau/" />
+        <folder expanded="1" path="animation-folder/Inimigo_barco/" />
+        <folder expanded="1" path="animation-folder/Inimigo_vela/" />
+        <folder expanded="1" path="animation-folder/Inimigo_canhao/" />
+        <folder expanded="1" path="animation-folder/Inimigo_bala/" />
+        <folder expanded="1" path="animation-folder/Inimigo_cap/" />
+        <folder expanded="1" path="animation-folder/Inimigo1/" />
+        <folder expanded="1" path="animation-folder/Inimigo2/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Pontuacao_board/" />
+        <folder expanded="1" path="animation-folder/Progresso/" />
+        <folder expanded="1" path="animation-folder/Menu/" />
+        <folder expanded="1" path="animation-folder/Menu1/" />
+        <folder expanded="1" path="animation-folder/Menu2/" />
+        <folder expanded="1" path="animation-folder/Menu3/" />
+        <folder expanded="1" path="animation-folder/Controles/" />
+        <folder expanded="1" path="animation-folder/Menu_fases1/" />
+        <folder expanded="1" path="animation-folder/Menu_fases2/" />
+        <folder expanded="1" path="animation-folder/GameOver/" />
+        <folder expanded="1" path="animation-folder/Fase1/" />
+        <folder expanded="1" path="animation-folder/Voltar/" />
+        <folder expanded="1" path="animation-folder/Fase2/" />
+        <folder expanded="1" path="animation-folder/Fase3/" />
+        <folder expanded="1" path="animation-folder/Progredir/" />
+        <folder expanded="1" path="animation-folder/Home/" />
+        <folder expanded="1" path="animation-folder/Reiniciar/" />
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/Som/" />
+        <folder expanded="1" path="animation-folder/Bau_menu/" />
+        <folder expanded="1" path="animation-folder/Espinho/" />
+        <folder expanded="1" path="animation-folder/Caveira_menu/" />
+        <folder expanded="1" path="animation-folder/Concha/" />
+        <folder expanded="1" path="animation-folder/PalmeiraTopo/" />
+        <folder expanded="1" path="animation-folder/Bandeira/" />
+        <folder expanded="1" path="animation-folder/PalmeiraBase/" />
+        <folder expanded="1" path="animation-folder/PalmeiraFundo/" />
+        <folder expanded="1" path="animation-folder/Barco_menu/" />
+        <folder expanded="1" path="animation-folder/Moeda_efeito/" />
+        <folder expanded="1" path="animation-folder/Dima_efeito/" />
+        <folder expanded="1" path="animation-folder/Moeda/" />
+        <folder expanded="1" path="animation-folder/Diamantes/" />
+        <folder expanded="1" path="animation-folder/Tesouro/" />
+        <folder expanded="1" path="animation-folder/Concha_p/" />
+        <folder expanded="1" path="animation-folder/Perola/" />
+        <folder expanded="1" path="animation-folder/Caranguejo/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/Barco_b/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/Chao/" />
+    </folders-expanded>
+</c2uistate>

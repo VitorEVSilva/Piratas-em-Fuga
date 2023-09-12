@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EvBarco</name>
+    <events>
+        <variable constant="0" name="Vida" sid="434702036259378" static="0" type="number">3</variable>
+        <variable constant="0" name="Pontuacao" sid="399832717689372" static="0" type="number">0</variable>
+        <event-group description="" sid="394964316540460" title="Reativando Colisões">
+            <sub-events>
+                <event-block sid="544698710142942">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="931168269049397" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="704780089193706" type="System">
+                            <param id="0" name="Group name">&quot;Canhão&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="765375665415371" type="System">
+                            <param id="0" name="Group name">&quot;Colisão Barco&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="239839064140490" title="HUD">
+            <sub-events>
+                <event-block sid="755719688597503">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="923518864296785" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="315088253962157" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="268325705922877">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="672330056504004" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="546736399987135" type="Branca">
+                            <param id="0" name="Text">&quot;Pontuacao: &quot; &amp; Pontuacao</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="126408664376876">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="476999257811893" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="185526150570007" type="TiledBackground">
+                            <param id="0" name="Width">66</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="938133632046530">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="633037752444844" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="419975047428654" type="TiledBackground">
+                            <param id="0" name="Width">44</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="715713080664475">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="627480721107551" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="655961839601757" type="TiledBackground">
+                            <param id="0" name="Width">22</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="493621981096949">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="148775790572150" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="201070768922743" type="TiledBackground">
+                            <param id="0" name="Width">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="991972203655115" title="Canhão">
+            <sub-events>
+                <event-block sid="403119298564077">
+                    <conditions>
+                        <condition id="0" name="On click" sid="740722803937276" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="607267636380089" type="Canhao">
+                            <param id="0" name="Animation">&quot;Shoot&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="577026050132643" type="Canhao">
+                            <param id="0" name="Object">Bala</param>
+                            <param id="1" name="Layer">Canhao.LayerName</param>
+                            <param id="2" name="Image point">Canhao.X +10</param>
+                        </action>
+                        <action id="0" name="Play" sid="510148660496087" type="Audio">
+                            <param id="0" name="Audio file">Cannon</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="277965102047712">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="100417116349540" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="828195879312873" type="Canhao">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="631980400362653" title="Colisão Bala">
+            <sub-events>
+                <event-block sid="878545774633802">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="455035540445878" type="Bala">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="543145087467310" type="Inimigos" />
+                        <action id="0" name="Spawn another object" sid="424206467416562" type="Inimigos">
+                            <param id="0" name="Object">Bala_acerto</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="358655376239398" type="Bala" />
+                        <action id="-10" name="Add to" sid="680549308877361" type="System">
+                            <param id="0" name="Variable">Pontuacao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="912285873065529" type="Audio">
+                            <param id="0" name="Audio file">Explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="194395695714483">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="200117260333961" type="Bala">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">845</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="873498730317898" type="Bala" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="185120183331214" title="Colisão Barco">
+            <sub-events>
+                <event-block sid="857530377266165">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="178314342028170" type="BarcoCol">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="947200575398569" type="Barco">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="287527823451407" type="Audio">
+                            <param id="0" name="Audio file">Hit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="150427410239484" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="110124174443452" type="Inimigos" />
+                        <action id="11" name="Set collisions enabled" sid="384516041235537" type="BarcoCol">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="978868659399263" type="Barco">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="807040640716707" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="212501599251603" type="BarcoCol">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="962569194592124" title="Fim de Jogo">
+            <sub-events>
+                <event-block sid="788439202590228">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="239053607159112" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="588147231118464" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="677252542574827" type="System">
+                            <param id="0" name="Group name">&quot;Canhão&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="732335660077485" type="System">
+                            <param id="0" name="Group name">&quot;Colisão Barco&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="172783476687930" type="Audio">
+                            <param id="0" name="Audio file">Death</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="229254164993368" type="Vela">
+                            <param id="0" name="Animation">&quot;Destroyed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="385651206061297" type="Manche" />
+                        <action id="-9" name="Destroy" sid="246619988007356" type="PéCanhao" />
+                        <action id="-9" name="Destroy" sid="267697544155772" type="Canhao" />
+                        <action id="-3" name="Set position" sid="198723953391580" type="Bau">
+                            <param id="0" name="X">Inimigo_barco.X</param>
+                            <param id="1" name="Y">Inimigo_barco.Y</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="825970666945709" type="Bau" />
+                        <action id="4" name="Set animation" sid="534633633730867" type="Capitão">
+                            <param id="0" name="Animation">&quot;Death&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="225754533024183" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="812406188964239" type="System">
+                            <param id="0" name="Layout">Game_Over</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

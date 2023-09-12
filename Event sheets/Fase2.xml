@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Fase2</name>
+    <events>
+        <include>Som</include>
+        <include>EvPersonagem</include>
+        <event-block sid="839783017519092">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="207823737506345" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="319871123934464" type="System">
+                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="890237768695580" type="System">
+                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="310884661808915" type="System">
+                    <param id="0" name="Group name">&quot;Menu fase 2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="873776472086438" type="System">
+                    <param id="0" name="Group name">&quot;Inimigos 2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="978596388782546" type="System">
+                    <param id="0" name="Variable">Fase</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="733240350429461" type="Dourada">
+                    <param id="0" name="Text">&quot;Pegue o Tesouro&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="316665697616589" type="Audio" />
+                <action id="0" name="Play" sid="884517493778220" type="Audio">
+                    <param id="0" name="Audio file">Final Fantasy IV  Chocobos Theme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="339221219394450">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="771646795666065" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="865903243685811" type="Camera">
+                    <param id="0" name="X">lerp(Camera.X,Player.X,0.04)</param>
+                    <param id="1" name="Y">lerp(Camera.Y,Player.Y-20 ,0.04)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="569409118661126" title="Inimigos 2">
+            <sub-events>
+                <event-block sid="915199184806414">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="566286605573332" type="Perola">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="386816838901923" type="Perola" />
+                        <action id="-11" name="Subtract from" sid="902331521510672" type="System">
+                            <param id="0" name="Variable">VidaPlayer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="154737536200915" type="Player">
+                            <param id="0" name="X">Player.X - 100</param>
+                            <param id="1" name="Y">Player.Y - 100</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="263369107486366" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="314956174580454" type="Audio">
+                            <param id="0" name="Audio file">Hit_personagem</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="311876446471157">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="356831674023430" type="Concha_p">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="734034298437980" type="System">
+                            <param id="0" name="Variable">VidaPlayer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="542122491766439" type="Player">
+                            <param id="0" name="X">Player.X - 100</param>
+                            <param id="1" name="Y">Player.Y - 100</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="445870853894480" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="287137338755174" type="Audio">
+                            <param id="0" name="Audio file">Hit_personagem</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="123754795491834">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="246014572091574" type="Caranguejo">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="250569504492778" type="System">
+                            <param id="0" name="Variable">VidaPlayer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="750469363412937" type="Player">
+                            <param id="0" name="X">Player.X - 100</param>
+                            <param id="1" name="Y">Player.Y - 100</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="481557736475710" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="317072725920521" type="Audio">
+                            <param id="0" name="Audio file">Hit_personagem</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="692264024345937">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="368943551185752" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="346209250581386" type="Caranguejo">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="358541954012633">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="665217404364464" type="Concha_p">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="547766280105661" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="481824618496624" type="System">
+                            <param id="0" name="Object to create">Perola</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">Concha_p.X</param>
+                            <param id="3" name="Y">Concha_p.Y-10</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="266204375942159" type="Perola">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="880635815904694">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="832615674028527" type="Perola">
+                            <param id="0" name="Object">Chao</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="620507511738134" type="Perola" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="595981726636513" title="Cenario">
+            <sub-events>
+                <event-block sid="188991361129038">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="247493373059097" type="Espinho">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="271415971145584" type="System">
+                            <param id="0" name="Variable">VidaPlayer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="889951568621572" type="Player">
+                            <param id="0" name="X">Player.X - 100</param>
+                            <param id="1" name="Y">Player.Y - 100</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="982012409302031" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="861843647553357" type="Audio">
+                            <param id="0" name="Audio file">Hit_personagem</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="910421649995086">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="225601509584011" type="Moeda">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="251555687792390" type="Moeda" />
+                        <action id="-10" name="Add to" sid="634495523554149" type="System">
+                            <param id="0" name="Variable">Pontuacao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="286628975168786" type="System">
+                            <param id="0" name="Object to create">Moeda_efeito</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">Player.X</param>
+                            <param id="3" name="Y">Player.Y -50</param>
+                        </action>
+                        <action id="0" name="Play" sid="880245746709287" type="Audio">
+                            <param id="0" name="Audio file">Coins</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="412690482649981">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="146433184210521" type="Diamantes">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="774005342059911" type="Diamantes" />
+                        <action id="-10" name="Add to" sid="154732982073103" type="System">
+                            <param id="0" name="Variable">Pontuacao</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="357574102539409" type="System">
+                            <param id="0" name="Object to create">Dima_efeito</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">Player.X</param>
+                            <param id="3" name="Y">Player.Y -50</param>
+                        </action>
+                        <action id="0" name="Play" sid="520660608274942" type="Audio">
+                            <param id="0" name="Audio file">Coins</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="537344275068864">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="616293368869590" type="Tesouro">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="690030175640823" type="Tesouro" />
+                        <action id="-10" name="Add to" sid="834480429260879" type="System">
+                            <param id="0" name="Variable">Pontuacao</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="955322863533166" type="System">
+                            <param id="0" name="Object to create">Dima_efeito</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">Player.X</param>
+                            <param id="3" name="Y">Player.Y -50</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="738931801795278" type="Player">
+                            <param id="0" name="Instance variable">tesouro</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="529153787711154" type="Dourada">
+                            <param id="0" name="Text">&quot;Retorne ao Barco&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="365543602380630" type="Audio">
+                            <param id="0" name="Audio file">Coins</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="725778887530943" title="Background 2">
+            <sub-events>
+                <event-block sid="558228672643504">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="786526935687374" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="458243632708800" type="Cloud1">
+                            <param id="0" name="X">Cloud1.X-1.5</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="895604677076696" type="Cloud2">
+                            <param id="0" name="X">Cloud2.X -1.5</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="232996917573179" type="Cloud3">
+                            <param id="0" name="X">Cloud3.X -1.5</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="864997812678227" type="Cloud4">
+                            <param id="0" name="X">Cloud4.X -1.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="636896448877985">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="490154977003442" type="Cloud1">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-854</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="578062758169268" type="Cloud1">
+                            <param id="0" name="X">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="523475030559095">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="934361191159634" type="Cloud2">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="555182220014921" type="Cloud2">
+                            <param id="0" name="X">860</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="733565278399848">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="101518477707013" type="Cloud3">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-30</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="947742445998360" type="Cloud3">
+                            <param id="0" name="X">870</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="731008748837116">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="992696346801769" type="Cloud4">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="939210869458915" type="Cloud4">
+                            <param id="0" name="X">880</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="474718048521302" title="Final fase 2">
+            <sub-events>
+                <event-block sid="839183131675231">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="991826405107169" type="Player">
+                            <param id="0" name="Object">Barco_b</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="796880722953136">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="756801207843368" type="Player">
+                                    <param id="0" name="Instance variable">tesouro</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="550533313352825" type="System">
+                                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="378408603783910" type="System">
+                                    <param id="0" name="Group name">&quot;Menu fase 2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="754186549117117" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="33" name="Stop all" sid="698419861548479" type="Audio" />
+                                <action id="0" name="Play" sid="861283386529427" type="Audio">
+                                    <param id="0" name="Audio file">Final Fantasy IV- Victory Fanfare</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="607787286598672" title="Menu fase 2">
+                    <sub-events>
+                        <event-block sid="417401714378832">
+                            <conditions>
+                                <condition id="-9" name="Layer is visible" sid="220791921137704" type="System">
+                                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="107537630383424" type="Pontuacao_Fase">
+                                    <param id="0" name="Text">&quot;Pontuacao: &quot; &amp; Pontuacao</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="828757090068218">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="737301330471415" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Home</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="618540758923160" type="System">
+                                    <param id="0" name="Layout">Menu</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="898177906203212">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="110297174532527" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Progredir</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-43" name="Go to next/previous layout" sid="121287717325485" type="System">
+                                    <param id="0" name="Which">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

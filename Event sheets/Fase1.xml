@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Fase1</name>
+    <events>
+        <include>EvBarco</include>
+        <include>Som</include>
+        <event-block sid="757928508688881">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="123255153997562" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="847906714986306" type="System">
+                    <param id="0" name="Group name">&quot;Inimigos&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="684546144209372" type="System">
+                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="625816236478661" type="System">
+                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="502772230259523" type="System">
+                    <param id="0" name="Group name">&quot;Menu fase 1&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="702511655193865" type="System">
+                    <param id="0" name="Variable">Fase</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="416402661552066" type="Audio" />
+                <action id="0" name="Play" sid="571550669935040" type="Audio">
+                    <param id="0" name="Audio file">Battletoads in Battlemaniacs - Bonus Stage 1  Last Battle</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="546689327145676" title="Background">
+            <sub-events>
+                <event-block sid="839821488751972">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="902416302205475" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="731541256499004" type="Cloud1">
+                            <param id="0" name="X">Cloud1.X-4</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="974886808970266" type="Cloud2">
+                            <param id="0" name="X">Cloud2.X -4</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="620370213966013" type="Cloud3">
+                            <param id="0" name="X">Cloud3.X -4</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="164651792716586" type="Cloud4">
+                            <param id="0" name="X">Cloud4.X -4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="800051236885051">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="208294350745968" type="Cloud1">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-854</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="351384340300790" type="Cloud1">
+                            <param id="0" name="X">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="126484246149995">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="948580412806664" type="Cloud2">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="656274074810501" type="Cloud2">
+                            <param id="0" name="X">860</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="950344341868743">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="745987974862770" type="Cloud3">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-30</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="336374385001397" type="Cloud3">
+                            <param id="0" name="X">870</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="194316676038668">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="533524813309706" type="Cloud4">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="286495477479730" type="Cloud4">
+                            <param id="0" name="X">880</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="727107943344629" title="Barra de Progresso">
+            <sub-events>
+                <event-block sid="133167781656334">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="356395253180598" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="252568097460494" type="Barco_menu">
+                            <param id="0" name="X">Barco_menu.X +0.1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="802305389115995">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="697448308742249" type="Barco_menu">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">745</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="595157054876798" type="Barco_menu">
+                                    <param id="0" name="X">745</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="242416396779744" title="Inimigos">
+            <sub-events>
+                <event-block sid="104540379290409">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="540330847468013" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="578906649529526" type="System">
+                            <param id="0" name="Object to create">Inimigo1</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">random(900,860)</param>
+                            <param id="3" name="Y">random(400,20)</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="720612363700093" type="Inimigo1">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="375168505803620">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="507020005305152" type="Inimigo1">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Y co-ordinate">200</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="867688160992550" type="Inimigo1">
+                                    <param id="0" name="Angle">165</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="888666731304332">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="127152034899144" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="999633489218447" type="System">
+                            <param id="0" name="Object to create">Inimigo2</param>
+                            <param id="1" name="Layer">Water.ZIndex</param>
+                            <param id="2" name="X">900</param>
+                            <param id="3" name="Y">420</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="788664875340499" type="Inimigo2">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="350684138227532" title="Final fase 1">
+            <sub-events>
+                <event-block sid="745444836938699">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="383303205388496" type="Barco_menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="X co-ordinate">745</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="105409019297414" type="Audio">
+                            <param id="0" name="Tag">&quot;1&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="443081930542822" type="Audio">
+                            <param id="0" name="Audio file">Final Fantasy IV- Victory Fanfare</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="447750757779882" type="System">
+                            <param id="0" name="Group name">&quot;Colisão Barco&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="384111876985431" type="System">
+                            <param id="0" name="Group name">&quot;Inimigos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="335282936500125" type="TilemapIlha">
+                            <param id="0" name="X">TilemapIlha.X - 2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="304207465817950" type="System">
+                            <param id="0" name="Seconds">4.6</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="432482919063837" type="System">
+                            <param id="0" name="Group name">&quot;Canhão&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="788138522689964" type="System">
+                            <param id="0" name="Layer">&quot;HUD&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="973096458192850" type="Barco_menu" />
+                        <action id="-1" name="Set X" sid="249310845254246" type="TilemapIlha">
+                            <param id="0" name="X">300</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="874145442776809" type="System">
+                            <param id="0" name="Layer">&quot;Menu&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="874838725069449" type="System">
+                            <param id="0" name="Group name">&quot;Menu fase 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="590825017279831" title="Menu fase 1">
+                    <sub-events>
+                        <event-block sid="595647261925154">
+                            <conditions>
+                                <condition id="-9" name="Layer is visible" sid="532278012052714" type="System">
+                                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="989639228293054" type="Pontuacao_Fase">
+                                    <param id="0" name="Text">&quot;Pontuacao: &quot; &amp; Pontuacao</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="741388265289359">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="558318432482479" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Home</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="374114399102966" type="System">
+                                    <param id="0" name="Layout">Menu</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="769299585657962">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="324308467217290" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Progredir</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-43" name="Go to next/previous layout" sid="972701673400805" type="System">
+                                    <param id="0" name="Which">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

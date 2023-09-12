@@ -1,0 +1,1720 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Piratas</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2i3s33n9zlsb</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Backgrounds">
+            <object-folder name="Water">
+                <object-type name="Water" sid="817397519553108">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="441360082439372" speed="4">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Water\Water\Top\1.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Water\Water\Top\2.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Water\Water\Top\3.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Water\Water\Top\4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Sprite" sid="542765311869720">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703666265678332" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Background\Additional Water.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Clouds">
+                <object-type name="Cloud2" sid="455148028683792">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303456604870952" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Background\Small Cloud 1.png">
+                                <collision-poly>
+                                    <point x="0.148649" y="0.458333" />
+                                    <point x="0.5" y="0.125" />
+                                    <point x="0.77027" y="0.708333" />
+                                    <point x="0.648649" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Cloud3" sid="275802615753778">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785139817284641" speed="5">
+                            <frame duration="1" hotspotX="0.503759" hotspotY="0.514286" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Background\Small Cloud 2.png">
+                                <collision-poly>
+                                    <point x="0.150376" y="0.571429" />
+                                    <point x="0.496241" y="0.228571" />
+                                    <point x="0.789474" y="0.8" />
+                                    <point x="0.661654" y="0.485714" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.150376" y="0.485714" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Cloud4" sid="918578414599677">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794999837316523" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.512821" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Background\Small Cloud 3.png">
+                                <collision-poly>
+                                    <point x="0.114286" y="0.410256" />
+                                    <point x="0.5" y="0.128205" />
+                                    <point x="0.778571" y="0.794872" />
+                                    <point x="0.678571" y="0.487179" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.114286" y="0.487179" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Cloud1" sid="887104077645214">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Background\Big Clouds.png" />
+                </object-type>
+            </object-folder>
+            <object-type name="bg" sid="967964131279485">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985292427437415" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Background\BG Image.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TilemapIlha" sid="754567887858644">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Terrain\Terrain.png" />
+                <tiles />
+            </object-type>
+            <object-type name="Ilha" sid="365402170292898">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="778454553067166" speed="5">
+                        <frame duration="1" hotspotX="0.51" hotspotY="0.462366" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Terrain\Island.png">
+                            <collision-poly>
+                                <point x="0.2" y="0.129032" />
+                                <point x="0.51" y="0.236559" />
+                                <point x="0.84" y="0.107527" />
+                                <point x="0.97" y="0.462366" />
+                                <point x="0.96" y="0.946237" />
+                                <point x="0.51" y="0.989247" />
+                                <point x="0.07" y="0.935484" />
+                                <point x="0.06" y="0.462366" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Barco">
+            <object-folder name="Bala">
+                <object-type name="Bala" sid="395332096530228">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Bullet" sid="799694916892738">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                        <behavior-type name="DestroyOutsideLayout" sid="410064191537918">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301530753647060" speed="5">
+                            <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Idle\1.png">
+                                <collision-poly>
+                                    <point x="0.235294" y="0.176471" />
+                                    <point x="0.529412" y="0.0588235" />
+                                    <point x="0.823529" y="0.176471" />
+                                    <point x="0.941176" y="0.470588" />
+                                    <point x="0.823529" y="0.764706" />
+                                    <point x="0.529412" y="0.941176" />
+                                    <point x="0.176471" y="0.823529" />
+                                    <point x="0.0588235" y="0.470588" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Bala_acerto" sid="431439298166219">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="120974587850051">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145375085440887" speed="5">
+                            <frame duration="1" hotspotX="0.512195" hotspotY="0.512195" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Explosion\1.png" />
+                            <frame duration="1" hotspotX="0.510638" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Explosion\2.png" />
+                            <frame duration="1" hotspotX="0.509804" hotspotY="0.508772" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Explosion\3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Explosion\4.png" />
+                            <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Explosion\5.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Explosion\6.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Explosion\7.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Bala_acerto2" sid="600264821213230">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="721711534010010">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200546488739434" speed="8">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\5.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\6.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\7.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\8.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\1-BOMB\3-Explotion\9.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="Barco" sid="970658333726452">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="142881253132836">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="586508749881671">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="6" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="180976393347921" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\1.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\2.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\3.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\4.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\5.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\6.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="0" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="260306963977370" speed="4">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\1.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\2.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\3.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\4.png">
+                            <collision-poly>
+                                <point x="0" y="0.115385" />
+                                <point x="1" y="0.115385" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Vela" sid="507947526045092">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="813422189903527" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\4.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Destroyed" pingpong="0" repeatcount="1" repeatto="0" sid="298096952282592" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="-0.529412" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Destroyed\1.png">
+                            <collision-poly>
+                                <point x="0.155172" y="0.352941" />
+                                <point x="0.5" y="0.235294" />
+                                <point x="0.87931" y="0.235294" />
+                                <point x="0.913793" y="0.529412" />
+                                <point x="0.913793" y="0.941176" />
+                                <point x="0.0862069" y="0.941176" />
+                                <point x="0.103448" y="0.529412" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Manche" sid="249822440002038">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549454039364647" speed="10">
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Idle 01.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Idle 02.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Idle 03.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Idle 04.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Idle 05.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Idle 06.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Turn 01.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Turn 02.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Turn 03.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Ship Helm\Ship Helm Turn 04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Capitão" sid="238807009329821">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="909074036993195" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.566667" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.551724" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.535714" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 04.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.566667" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 05.png" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="Death" pingpong="0" repeatcount="1" repeatto="0" sid="385758890530708" speed="5">
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.25" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\08-Dead Ground\Dead Ground 01.png" />
+                        <frame duration="1" hotspotX="0.518519" hotspotY="0.423077" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\08-Dead Ground\Dead Ground 02.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.347826" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\08-Dead Ground\Dead Ground 03.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.318182" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\08-Dead Ground\Dead Ground 04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Canhao" sid="231140438673001">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="442280288133918" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Idle\1.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="6" loop="0" name="Shoot" pingpong="0" repeatcount="1" repeatto="0" sid="462269212781182" speed="20">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Fire\1.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Fire\2.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Fire\3.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Fire\4.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Fire\5.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Fire\6.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PéCanhao" sid="825723291643377">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="482038396458315" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Idle\1.png">
+                            <collision-poly>
+                                <point x="1" y="0.933333" />
+                                <point x="0" y="0.933333" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Bau" sid="810507828313119">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="652581319586655" speed="7">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 08.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 09.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 10.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Inimigos">
+            <object-folder name="Barquinhos">
+                <object-type name="Inimigo_barco" sid="262838610998053">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="248924171258094">
+                            <behavior id="solid" />
+                        </behavior-type>
+                        <behavior-type name="DestroyOutsideLayout" sid="712330581893139">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="6" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="301002793043495" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\1.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\3.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\4.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\5.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Idle\6.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="406206912690036" speed="15">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\1.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\3.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.115385" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Ship\Hit\4.png">
+                                <collision-poly>
+                                    <point x="0" y="0.115385" />
+                                    <point x="1" y="0.115385" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Inimigo_vela" sid="207699288260459">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DestroyOutsideLayout" sid="234972288819505">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="448749792078632" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Sail\Wind\4.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="Destroyed" pingpong="0" repeatcount="1" repeatto="0" sid="628653023660889" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Merchant Ship\Sprites\Ship\Destroyed\1.png">
+                                <collision-poly>
+                                    <point x="0.155172" y="0.352941" />
+                                    <point x="0.5" y="0.235294" />
+                                    <point x="0.87931" y="0.235294" />
+                                    <point x="0.913793" y="0.529412" />
+                                    <point x="0.913793" y="0.941176" />
+                                    <point x="0.0862069" y="0.941176" />
+                                    <point x="0.103448" y="0.529412" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Inimigo_canhao" sid="446020902774537">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DestroyOutsideLayout" sid="179868834768880">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="551129369950664" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Cannon\Cannon Fire\1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Cannon\Cannon Fire\2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Cannon\Cannon Fire\3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Cannon\Cannon Fire\4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Cannon\Cannon Fire\5.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Cannon\Cannon Fire\6.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Inimigo_bala" sid="838719385926579">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Bullet" sid="581885431468168">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                        <behavior-type name="DestroyOutsideLayout" sid="445899984143746">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184261536134399" speed="5">
+                            <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Cannon\Cannon Ball Idle\1.png">
+                                <collision-poly>
+                                    <point x="0.235294" y="0.176471" />
+                                    <point x="0.529412" y="0.0588235" />
+                                    <point x="0.823529" y="0.176471" />
+                                    <point x="0.941176" y="0.470588" />
+                                    <point x="0.823529" y="0.764706" />
+                                    <point x="0.529412" y="0.941176" />
+                                    <point x="0.176471" y="0.823529" />
+                                    <point x="0.0588235" y="0.470588" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Inimigo_cap" sid="538003293461787">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DestroyOutsideLayout" sid="695396192626131">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="12" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="723171996123275" speed="15">
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\1.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\2.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\3.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\4.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\5.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\6.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\7.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\8.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\9.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\10.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\11.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507937" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\2-Enemy-Bald Pirate\7-Attack\12.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="Inimigo1" sid="123710286485896">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="559269816863487">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                    <behavior-type name="Bullet" sid="106417750414393">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="583156524574178" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\07-Attack\Attack 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\07-Attack\Attack 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\07-Attack\Attack 03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\07-Attack\Attack 04.png" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="274902985375747" speed="5">
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\08-Hit\Hit 01.png" />
+                        <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\08-Hit\Hit 02.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\08-Hit\Hit 03.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Pink Star\08-Hit\Hit 04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Inimigo2" sid="901524402772896">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="807606694512978">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                    <behavior-type name="Bullet" sid="275543511828587">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671269019252768" speed="8">
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\06-Anticipation\Anticipation 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\06-Anticipation\Anticipation 02.png" />
+                        <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\06-Anticipation\Anticipation 03.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.517241" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\07-Attack\Attack 01.png" />
+                        <frame duration="1" hotspotX="0.518519" hotspotY="0.517241" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\07-Attack\Attack 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\07-Attack\Attack 03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\07-Attack\Attack 04.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Fierce Tooth\07-Attack\Attack 05.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Barra de Vida">
+            <object-type name="TiledBackground" sid="958713144391945">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="146169124839776">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\11-Health Bar\Heart.png" />
+            </object-type>
+            <object-type name="Sprite2" sid="463881153107381">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="588025481426386">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205429382843638" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Pirate Bomb\Sprites\7-Objects\11-Health Bar\Health Bar.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.209677" />
+                                <point x="0.818182" y="0.451613" />
+                                <point x="0.818182" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.790323" />
+                                <point x="0.181818" y="0.548387" />
+                                <point x="0.181818" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pontuacao_board" sid="680448930792053">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139405194408091" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.588235" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Sprites\Yellow Board\Yellow Board.png">
+                            <collision-poly>
+                                <point x="0.0113636" y="0.176471" />
+                                <point x="0.488636" y="0.0294118" />
+                                <point x="0.988636" y="0.147059" />
+                                <point x="0.977273" y="0.970588" />
+                                <point x="0.488636" y="0.970588" />
+                                <point x="0.0227273" y="0.941176" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Progresso" sid="739099962898635">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145573545172976" speed="5">
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Progress.png">
+                            <collision-poly>
+                                <point x="0.0144928" y="0.166667" />
+                                <point x="0.492754" y="0" />
+                                <point x="0.985507" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.985507" y="0.833333" />
+                                <point x="0.492754" y="1" />
+                                <point x="0.0144928" y="0.833333" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Fonts">
+            <object-type name="Branca" sid="342052440634146">
+                <plugin id="Spritefont2" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="494312699539167">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\onixgames_free_font\white_font_by_onixgames.com.png.png" />
+            </object-type>
+            <object-type name="Preta" sid="835743802609759">
+                <plugin id="Spritefont2" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="413184145952665">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\onixgames_free_font\onix_font_black.png" />
+            </object-type>
+            <object-type name="Dourada" sid="121572462936322">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\onixgames_free_font\gold_font_by_onixgames.com.png" />
+            </object-type>
+            <object-type name="Cinza" sid="101237050880349">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\onixgames_free_font\gold_font_by_onixgames.com.png" />
+            </object-type>
+            <object-type name="Pontuacao_Fase" sid="761833360840146">
+                <plugin id="Spritefont2" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="643105400919593">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\onixgames_free_font\onix_font_black.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="TileSets_menu">
+            <object-folder name="Menu">
+                <object-folder name="Menu_inicial">
+                    <object-type name="Menu" sid="701926994670365">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697754882846040" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.503876" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Menu.png">
+                                    <collision-poly>
+                                        <point x="0.0104167" y="0.0542636" />
+                                        <point x="0.6875" y="0.0232558" />
+                                        <point x="0.947917" y="0.372093" />
+                                        <point x="0.947917" y="0.604651" />
+                                        <point x="0.6875" y="0.992248" />
+                                        <point x="0.0520833" y="0.891473" />
+                                        <point x="0.0520833" y="0.488372" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Menu1" sid="654274640896966">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="584229898581288" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Menu.png">
+                                    <collision-poly>
+                                        <point x="0.0104167" y="0" />
+                                        <point x="0.6875" y="0" />
+                                        <point x="0.947917" y="0.371429" />
+                                        <point x="0.947917" y="0.8" />
+                                        <point x="0.6875" y="1" />
+                                        <point x="0.0520833" y="1" />
+                                        <point x="0.0520833" y="0.585714" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Menu2" sid="535295007400330">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="835142242371116" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Menu2.png">
+                                    <collision-poly>
+                                        <point x="0.0138889" y="0.132353" />
+                                        <point x="0.513889" y="0.0147059" />
+                                        <point x="0.986111" y="0.176471" />
+                                        <point x="0.986111" y="0.882353" />
+                                        <point x="0.513889" y="0.985294" />
+                                        <point x="0.0277778" y="0.911765" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Menu3" sid="600073315596634">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645737973008998" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Menu2.png">
+                                    <collision-poly>
+                                        <point x="0.0138889" y="0" />
+                                        <point x="0.513889" y="0" />
+                                        <point x="0.986111" y="0" />
+                                        <point x="0.986111" y="0.84" />
+                                        <point x="0.513889" y="0.98" />
+                                        <point x="0.0277778" y="0.88" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Controles" sid="729240717499353">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561066491577928" speed="5">
+                                <frame duration="1" hotspotX="0.527778" hotspotY="0.529412" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Controls.png">
+                                    <collision-poly>
+                                        <point x="0.0138889" y="0.132353" />
+                                        <point x="0.513889" y="0.0147059" />
+                                        <point x="0.986111" y="0.176471" />
+                                        <point x="0.986111" y="0.882353" />
+                                        <point x="0.513889" y="0.985294" />
+                                        <point x="0.0277778" y="0.911765" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Menu_fases">
+                    <object-type name="Menu_fases1" sid="578968598785574">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187461661103750" speed="5">
+                                <frame duration="1" hotspotX="0.511364" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Phasemenu1.png">
+                                    <collision-poly>
+                                        <point x="0.0227273" y="0.0113636" />
+                                        <point x="0.977273" y="0.0227273" />
+                                        <point x="0.977273" y="0.977273" />
+                                        <point x="0.0227273" y="0.988636" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Menu_fases2" sid="870631337764753">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614014853580128" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Phasemenu2.png">
+                                    <collision-poly>
+                                        <point x="0.0555556" y="0.0735294" />
+                                        <point x="0.5" y="0.0147059" />
+                                        <point x="0.986111" y="0.0294118" />
+                                        <point x="0.986111" y="0.5" />
+                                        <point x="0.958333" y="0.941176" />
+                                        <point x="0.5" y="0.985294" />
+                                        <point x="0.0138889" y="0.970588" />
+                                        <point x="0.0138889" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="GameOver" sid="955786731169188">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="103175415400462" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\GameOver.png">
+                                    <collision-poly>
+                                        <point x="0.130952" y="0.458333" />
+                                        <point x="0.5" y="0.0833333" />
+                                        <point x="0.928571" y="0.25" />
+                                        <point x="0.916667" y="0.5" />
+                                        <point x="0.928571" y="0.75" />
+                                        <point x="0.5" y="0.75" />
+                                        <point x="0.0238095" y="0.916667" />
+                                        <point x="0.0238095" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+            </object-folder>
+            <object-folder name="Botoes">
+                <object-folder name="Fases">
+                    <object-type name="Fase1" sid="947088141180843">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="624287525722680" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Phase1.png">
+                                    <collision-poly>
+                                        <point x="0.0714286" y="0.0714286" />
+                                        <point x="0.5" y="0" />
+                                        <point x="0.928571" y="0.0714286" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.928571" y="0.928571" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.0714286" y="0.928571" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Voltar" sid="333002687643535">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="446832849928540" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\GoBack.png">
+                                    <collision-poly>
+                                        <point x="0.0714286" y="0.0714286" />
+                                        <point x="0.5" y="0" />
+                                        <point x="0.928571" y="0.0714286" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.928571" y="0.928571" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.0714286" y="0.928571" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Fase2" sid="198884338962661">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991615714875526" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Phase2.png">
+                                    <collision-poly>
+                                        <point x="0.0714286" y="0.0714286" />
+                                        <point x="0.5" y="0" />
+                                        <point x="0.928571" y="0.0714286" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.928571" y="0.928571" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.0714286" y="0.928571" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Fase3" sid="336334251074104">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="966696812087450" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Phase3.png">
+                                    <collision-poly>
+                                        <point x="0.0714286" y="0.0714286" />
+                                        <point x="0.5" y="0" />
+                                        <point x="0.928571" y="0.0714286" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.928571" y="0.928571" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.0714286" y="0.928571" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Progredir" sid="346912722626527">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="384952336912593" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\GoBack.png">
+                                    <collision-poly>
+                                        <point x="1" y="0.5" />
+                                        <point x="0.928571" y="0.928571" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.071429" y="0.928571" />
+                                        <point x="0" y="0.5" />
+                                        <point x="0.071429" y="0.0714286" />
+                                        <point x="0.5" y="0" />
+                                        <point x="0.928571" y="0.0714286" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Home" sid="249014532659824">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843734945126385" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Home1.png">
+                                    <collision-poly>
+                                        <point x="0.0714286" y="0.0714286" />
+                                        <point x="0.5" y="0" />
+                                        <point x="0.928571" y="0.0714286" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.928571" y="0.928571" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.0714286" y="0.928571" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Reiniciar" sid="169662100058265">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="307598880552887" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\BotaoPlay.png">
+                                    <collision-poly>
+                                        <point x="1" y="0.5" />
+                                        <point x="0.928571" y="0.928571" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.071429" y="0.928571" />
+                                        <point x="0" y="0.5" />
+                                        <point x="0.071429" y="0.0714286" />
+                                        <point x="0.5" y="0" />
+                                        <point x="0.928571" y="0.0714286" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-type name="Play" sid="255654984228604">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849302294210388" speed="5">
+                            <frame duration="1" hotspotX="0.526316" hotspotY="0.4375" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Play.png">
+                                <collision-poly>
+                                    <point x="0.0263158" y="0.1875" />
+                                    <point x="0.5" y="0.0625" />
+                                    <point x="0.973684" y="0.25" />
+                                    <point x="0.973684" y="0.625" />
+                                    <point x="0.5" y="0.9375" />
+                                    <point x="0.0263158" y="0.6875" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Som" sid="490554321697029">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645764463374135" speed="5">
+                            <frame duration="1" hotspotX="0.527778" hotspotY="0.4375" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\SoundOn.png">
+                                <collision-poly>
+                                    <point x="0.0277778" y="0.25" />
+                                    <point x="0.5" y="0.0625" />
+                                    <point x="0.972222" y="0.3125" />
+                                    <point x="0.972222" y="0.5625" />
+                                    <point x="0.5" y="0.9375" />
+                                    <point x="0.0277778" y="0.625" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="Off" pingpong="0" repeatcount="1" repeatto="0" sid="328989922586052" speed="5">
+                            <frame duration="1" hotspotX="0.527778" hotspotY="0.4375" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\SoundOff.png">
+                                <collision-poly>
+                                    <point x="0.0277778" y="0.25" />
+                                    <point x="0.5" y="0.0625" />
+                                    <point x="0.972222" y="0.3125" />
+                                    <point x="0.972222" y="0.5625" />
+                                    <point x="0.5" y="0.9375" />
+                                    <point x="0.0277778" y="0.625" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="Tilemap" sid="240082999432365">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Terrain\Terrain (32x32).png" />
+                <tiles />
+            </object-type>
+            <object-type name="Bau_menu" sid="286750043496652">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312314284236686" speed="7">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 04.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 05.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 06.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 07.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 08.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 09.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Close 10.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Espinho" sid="386154709000877">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486133648258818" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Spikes\Spikes.png">
+                            <collision-poly>
+                                <point x="0.59375" y="0.59375" />
+                                <point x="0.5" y="0.75" />
+                                <point x="0.40625" y="0.59375" />
+                                <point x="0.375" y="0.5" />
+                                <point x="0.90625" y="0.90625" />
+                                <point x="0.5" y="0.84375" />
+                                <point x="0.0625" y="0.9375" />
+                                <point x="0.34375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Caveira_menu" sid="358609226650209">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511111025516465" speed="6">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\04.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\05.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\06.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\07.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Golden Skull\08.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Concha" sid="290704267759080">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="144004222223806" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Bite\1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Bite\2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Bite\3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Bite\4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Bite\5.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Bite\6.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PalmeiraTopo" sid="597542473881485">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841014976955790" speed="5">
+                        <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Front Palm Trees\Front Palm Tree Top 01.png" />
+                        <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Front Palm Trees\Front Palm Tree Top 02.png" />
+                        <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Front Palm Trees\Front Palm Tree Top 03.png" />
+                        <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Front Palm Trees\Front Palm Tree Top 04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Bandeira" sid="824481175535565">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="9" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406059047719945" speed="8">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 04.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 05.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 06.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 07.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 08.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Flag\Flag 09.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PalmeiraBase" sid="980766392340834">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112988521230641" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Front Palm Trees\Front Palm Bottom and Grass (32x32).png">
+                            <collision-poly>
+                                <point x="0" y="0.565217" />
+                                <point x="0.1" y="0.0434783" />
+                                <point x="0.84" y="0.521739" />
+                                <point x="0.6" y="1" />
+                                <point x="1" y="1" />
+                                <point x="0.1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PalmeiraFundo" sid="140659502302093">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258132781914892" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Back Palm Trees\Back Palm Tree Regular 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Back Palm Trees\Back Palm Tree Regular 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Back Palm Trees\Back Palm Tree Regular 03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Back Palm Trees\Back Palm Tree Regular 04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Barco_menu" sid="832810149759199">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="594771764671921" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Barquin\Barquin1.png" />
+                        <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Barquin\Barquin2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Barquin\Barquin3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Barquin\Barquin4.png" />
+                        <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Barquin\Barquin5.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Wood and Paper UI\Aseprite\Barquin\Barquin6.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Plataforma">
+            <object-folder name="Itens">
+                <object-folder name="Efeitos">
+                    <object-type name="Moeda_efeito" sid="569907816696786">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Fade" sid="761731118507213">
+                                <behavior id="Fade" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="557476322992667" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Coin Effect\01.png" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Coin Effect\02.png" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Coin Effect\03.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Dima_efeito" sid="470002325500457">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Fade" sid="519124528565035">
+                                <behavior id="Fade" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869926456234749" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Diamond Effect\01.png" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Diamond Effect\02.png" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Diamond Effect\03.png" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Diamond Effect\04.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-type name="Moeda" sid="877123052882069">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736738513167913" speed="4">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Gold Coin\01.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Gold Coin\02.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Gold Coin\03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Gold Coin\04.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Diamantes" sid="909125120675806">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218855057129183" speed="4">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Red Diamond\01.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Red Diamond\02.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Red Diamond\03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Pirate Treasure\Sprites\Red Diamond\04.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Tesouro" sid="839808739774838">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="394265772890317" speed="9">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 01.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 02.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 04.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 05.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 06.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 07.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 08.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 09.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Objects\Chest\Chest Open 10.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Inimigos">
+                <object-type name="Concha_p" sid="494513146812092">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353968830569996" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Fire\1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Fire\2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Fire\3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Fire\4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Fire\5.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Seashell Fire\6.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Perola" sid="466659813151437">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Bullet" sid="225886846166982">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727196867617432" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Shooter Traps\Sprites\Seashell\Pearl Idle\1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Caranguejo" sid="170724603249120">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="926441053321065">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="9" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501211919881789" speed="8">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 01.png" />
+                            <frame duration="1" hotspotX="0.512195" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 02.png" />
+                            <frame duration="1" hotspotX="0.512195" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 04.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 05.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 06.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 07.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 08.png" />
+                            <frame duration="1" hotspotX="0.511628" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\The Crusty Crew\Sprites\Crabby\01-Idle\Idle 09.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="TilemapIlha2" sid="859589550694494">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Palm Tree Island\Sprites\Terrain\Terrain.png" />
+                <tiles />
+            </object-type>
+            <object-type name="Player" sid="436650770729472">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="estado" sid="800842872429583" type="string" />
+                    <instance-variable name="pulando" sid="870158239841741" type="boolean" />
+                    <instance-variable name="tesouro" sid="601790689602064" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="617752381847351">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="215899873317492">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="888499669214887">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="676989149666604" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 03.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 04.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\01-Idle\Idle 05.png" />
+                    </animation>
+                    <animation framecount="6" loop="0" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="883903261407935" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\02-Run\Run 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\02-Run\Run 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\02-Run\Run 03.png" />
+                        <frame duration="1" hotspotX="0.518519" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\02-Run\Run 04.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\02-Run\Run 05.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\02-Run\Run 06.png" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="258805466390794" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\03-Jump\Jump 01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\03-Jump\Jump 02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\03-Jump\Jump 03.png" />
+                        <frame duration="1" hotspotX="0.518519" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\04-Fall\Fall 01.png" />
+                    </animation>
+                    <animation framecount="5" loop="0" name="Death" pingpong="0" repeatcount="1" repeatto="0" sid="504286608783895" speed="5">
+                        <frame duration="1" hotspotX="0.517241" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\07-Dead Hit\Dead Hit 01.png" />
+                        <frame duration="1" hotspotX="0.518519" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\07-Dead Hit\Dead Hit 02.png" />
+                        <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\07-Dead Hit\Dead Hit 03.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\07-Dead Hit\Dead Hit 04.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="1" original-source="C:\Users\vitor\OneDrive\Documents\Assets\Piratas\Treasure Hunters\Captain Clown Nose\Sprites\Captain Clown Nose\Captain Clown Nose without Sword\08-Dead Ground\Dead Ground 04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Barco_b" sid="731492250885306">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="981277189572781">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919804184871553" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Camera" sid="493665993844499">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="764267256046950">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100502378947017" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Chao" sid="401750971534574">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="966223173305107">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965641754987603" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Keyboard" sid="665799376436301">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="237834018279068">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Audio" sid="531533535652820">
+            <plugin id="Audio" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Inimigos" plugin-id="Sprite" sid="770769663204911">
+            <members>
+                <member>Inimigo1</member>
+                <member>Inimigo2</member>
+                <member>Inimigo_bala</member>
+            </members>
+        </family>
+        <family name="BarcoCol" plugin-id="Sprite" sid="283164107409469">
+            <members>
+                <member>Barco</member>
+                <member>Vela</member>
+            </members>
+        </family>
+        <family name="Inimigos_p2" plugin-id="Sprite" sid="483196129799199">
+            <members>
+                <member>Caranguejo</member>
+                <member>Concha_p</member>
+            </members>
+        </family>
+        <family name="InBarco" plugin-id="Sprite" sid="548268703398539">
+            <members>
+                <member>Inimigo_barco</member>
+                <member>Inimigo_cap</member>
+                <member>Inimigo_vela</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Fase1.xml</layout>
+        <layout>Fase2.xml</layout>
+        <layout>Fase3.xml</layout>
+        <layout>Game_Over.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>MenuPrincipal.xml</event-sheet>
+        <event-sheet>Fase1.xml</event-sheet>
+        <event-sheet>EvBarco.xml</event-sheet>
+        <event-sheet>Game_Over.xml</event-sheet>
+        <event-sheet>Fase3.xml</event-sheet>
+        <event-sheet>Fase2.xml</event-sheet>
+        <event-sheet>EvPersonagem.xml</event-sheet>
+        <event-sheet>Som.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="0" />
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Audio" uid="296">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Cannon.ogg" />
+        <file name="Explosion.ogg" />
+        <file name="Explosion_barco.ogg" />
+        <file name="Hit.ogg" />
+        <file name="Death.ogg" />
+        <file name="Jump.ogg" />
+        <file name="Coins.ogg" />
+        <file name="Hit_personagem.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Menu.ogg" />
+        <file name="Final Fantasy IV  Chocobos Theme.ogg" />
+        <file name="Final Fantasy IV- Victory Fanfare.ogg" />
+        <file name="The Adventures of Batman and Robin SNES - Jokers Funhouse.ogg" />
+        <file name="Battletoads in Battlemaniacs - Bonus Stage 1  Last Battle.ogg" />
+        <file name="Megaman  Bass [SNES] music Game Over [HD].ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
